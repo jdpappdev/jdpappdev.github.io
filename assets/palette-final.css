@@ -981,7 +981,7 @@ button,[role="button"]{font-weight:700!important;text-align:center!important}
 .closing-panel>.eyebrow{margin:0!important}
 .closing-panel .closing-content{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .closing-panel .closing-content h2{flex:1;max-width:none;margin:0!important;text-align:left!important;font-size:clamp(1.8rem,3vw,2.5rem)!important;line-height:1.16!important}
-.closing-panel .contact-jade-button{position:relative;width:200px;min-width:200px;min-height:62.5px!important;height:62.5px;padding:0!important;overflow:clip!important}
+.closing-panel .contact-jade-button{position:relative;width:200px;min-width:200px;min-height:62.5px!important;height:62.5px;padding:0!important;overflow:visible!important}
 .closing-panel .contact-jade-button,.closing-panel .contact-jade-button:hover,.closing-panel .contact-jade-button:focus-visible,.closing-panel .contact-jade-button:active{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;color:inherit!important}
 .closing-panel .contact-jade-button:hover,.closing-panel .contact-jade-button:focus-visible,.closing-panel .contact-jade-button:active{transform:none!important}
 .closing-panel .contact-jade-animation{position:absolute;left:50%;top:50%;display:block;width:112px;height:72px;overflow:visible;transform:translate(-50%,-50%) scale(5);transform-origin:center}
