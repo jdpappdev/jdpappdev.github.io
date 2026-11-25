@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+.vercel/
+.netlify/
+*.log
+
+# Local browser profiles and one-off image experiments
+/scripts/.edge-image-profile/
+/scripts/edge-profile-test/
+/scripts/image-test.html
+/scripts/optimize-images.cjs

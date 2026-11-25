@@ -1,0 +1,57 @@
+.project-brief {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  z-index: 1001;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  width: min(860px, calc(100vw - 32px));
+  max-width: none;
+  max-height: min(88vh, 900px);
+  padding: 0;
+  overflow: hidden;
+  color: #f5f5f5;
+  background: linear-gradient(145deg, #191919 0%, #111 54%, #0d0d0d 100%);
+  border: 1px solid #292929;
+  border-radius: 20px;
+  box-shadow: inset 0 1px #ffffff0c, 0 24px 72px #0008, 0 0 25px #52d6f414;
+}
+body.project-brief-open::before { content:"";position:fixed;inset:0;z-index:1000;background:#050708a8;backdrop-filter:blur(5px);pointer-events:none }
+.project-brief__shell { display: flex; flex-direction: column; max-height: min(88vh, 900px); }
+.project-brief__header { display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;border-bottom:1px solid #ffffff18 }
+.project-brief__eyebrow { margin:0;color:#52d6f4;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase }
+.project-brief__close { min-height:40px;padding:8px 13px;color:#f5f5f5;background:#ffffff08;border:1px solid #ffffff25;border-radius:10px;cursor:pointer;font-family:inherit;font-size:.8rem;font-weight:500;line-height:1.2 }
+.project-brief__close { width:40px;padding:0;font-size:1.35rem }
+.project-brief__close:hover { border-color:#52d6f4;color:#52d6f4 }
+.project-brief__body { overflow:auto;padding:22px;overscroll-behavior:contain;touch-action:pan-y }
+.project-brief__loading { padding:42px 10px;text-align:center;color:#d0d0d0 }
+.project-brief__body .detail-hero { padding:0;border:0 }
+.project-brief__body .detail-grid { grid-template-columns:minmax(0,1.1fr) minmax(180px,.8fr);gap:22px;align-items:center }
+.project-brief--developer .project-brief__body .detail-grid { grid-template-columns:minmax(0,1fr) }
+.project-brief--developer .project-brief__body .detail-grid > div { max-width:680px }
+.project-brief__body .detail-grid h1 { margin:0 0 8px;color:#f5f5f5;font-size:clamp(1.8rem,4vw,2.7rem) }
+.project-brief__body .detail-grid p { color:#d0d0d0;font-size:.88rem;line-height:1.65 }
+.project-brief__body .detail-grid .eyebrow { color:#52d6f4;font-size:.68rem }
+.project-brief__body .detail-grid .lede { margin:0 0 8px }
+.project-brief__body .detail-visual,.project-brief__body .image-placeholder { margin:0;background:#191919;border:1px solid #292929;border-radius:0 }
+.project-brief__body .detail-visual img { width:100%;max-height:260px;object-fit:contain }
+.project-brief__body .detail-visual figcaption { color:#b5b5b5;font-size:.7rem }
+.project-brief__body .button-row { gap:10px;margin-top:12px }
+.project-brief__body .project-brief__details { margin-top:18px;border-top:1px solid #ffffff20 }
+.project-brief__body .project-brief__details summary { padding:15px 0 18px;color:#52d6f4;cursor:pointer;font-size:.85rem }
+.project-brief__body .project-brief__details .section { padding:12px 0 12px }
+.project-brief__body .project-brief__details .section-head { display:none }
+.project-brief__body .project-brief__details .content-grid { grid-template-columns:minmax(0,1fr) minmax(200px,.75fr);gap:20px }
+.project-brief__body .project-brief__details h3 { color:#f5f5f5;font-size:1rem }
+.project-brief__body .project-brief__details p,.project-brief__body .project-brief__details li { color:#d0d0d0;font-size:.8rem;line-height:1.6 }
+.project-brief__body .project-brief__details .callout { box-sizing:border-box;width:calc(100% - 16px);margin:0 8px 12px!important;padding:12px;background:transparent!important;border:1px solid #3b3b3b!important;border-radius:0;box-shadow:none!important;transition:none!important;transform:none!important }
+.project-brief__body .project-brief__details .callout:hover { background:transparent!important;border-color:#3b3b3b!important;box-shadow:none!important;transform:none!important }
+@media(max-width:620px) {
+  .project-brief { width:calc(100vw - 20px);max-height:92vh;border-radius:16px }
+  .project-brief__shell { max-height:92vh }
+  .project-brief__body { padding:16px }
+  .project-brief__header { padding:12px 16px }
+  .project-brief__body .detail-grid,.project-brief__body .project-brief__details .content-grid { grid-template-columns:1fr }
+  .project-brief__body .detail-visual { order:-1 }
+  .project-brief__body .detail-visual img { max-height:190px }
+}
+@media(prefers-reduced-motion:reduce) { body.project-brief-open::before { backdrop-filter:none } }
