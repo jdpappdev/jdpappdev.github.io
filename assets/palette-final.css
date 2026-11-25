@@ -137,6 +137,11 @@ p,.lede,.small-note,.side-note,.case-body p,.proof-card p{color:#B5B5B5}
 .header-inner>.nav-hire{font-size:.9rem!important}
 @media(max-width:850px){.header-inner>.brand{font-size:1.65rem!important}.header-inner>.nav{font-size:.95rem!important}}
 @media(max-width:620px){.header-inner>.brand{font-size:1.5rem!important}.header-inner>.nav-hire{font-size:.82rem!important}}
+@media (max-width: 360px) {
+  .header-inner { gap: 8px !important; padding-inline: 12px !important; }
+  .header-inner > .brand { font-size: 1.25rem !important; }
+  .header-inner > .nav-hire { gap: 6px; padding-inline: 10px !important; }
+}
 .intro-panel h1 span{text-decoration:none!important}
 
 
@@ -189,7 +194,7 @@ button,[role="button"]{font-weight:700!important;text-align:center!important}
 
 
 /* Shift some desktop hero height from the intro card to the experience card. */
-@media(min-width:851px){.bento-home .intro-stack{grid-template-rows:minmax(auto,3fr) minmax(auto,2fr)!important}.bento-home .experience-panel{height:100%!important;box-sizing:border-box}}
+@media(min-width:851px){.bento-home .profile-panel{grid-area:1/1}.bento-home .intro-stack{grid-area:1/2;grid-template-rows:minmax(auto,3fr) minmax(auto,2fr)!important}.bento-home .experience-panel{height:100%!important;box-sizing:border-box}}
 @media(max-width:850px){.bento-home .intro-stack{grid-template-rows:auto auto!important}.bento-home .experience-panel{height:auto!important}}
 
 
@@ -977,7 +982,7 @@ button,[role="button"]{font-weight:700!important;text-align:center!important}
 .sample-brief .micro-label { display: inline-block; margin-bottom: 5px; line-height: 1.5; }
 .sample-brief p { margin: 0 !important; font-size: .87rem !important; line-height: 1.7 !important; }
 .closing-panel h2 { max-width: 16ch; margin-bottom: 14px !important; font-size: clamp(2rem, 3.4vw, 2.8rem) !important; line-height: 1.14 !important; }
-.closing-panel{padding:32px 36px!important}
+.closing-panel{padding:32px 36px!important;overflow:hidden;overflow:clip}
 .closing-panel>.eyebrow{margin:0!important}
 .closing-panel .closing-content{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .closing-panel .closing-content h2{flex:1;max-width:none;margin:0!important;text-align:left!important;font-size:clamp(1.8rem,3vw,2.5rem)!important;line-height:1.16!important}
