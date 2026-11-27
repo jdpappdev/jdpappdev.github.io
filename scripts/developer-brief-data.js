@@ -23,7 +23,7 @@ window.developerBriefs = {
     tools: 'IndexedDB for local records, Firestore sync, photo evidence, and document export. AI tools helped with implementation and debugging.',
     status: 'The public demo currently opens at sign-in.',
     limitation: 'You will need the configured account to access the demo and its sync features.',
-    link: 'https://demo-assured-capture.netlify.app',
+    link: 'https://assured-capture-demo.vercel.app/',
     label: 'Open demo'
   },
   'deaf-contact-record': {
